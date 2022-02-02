@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-white{
@@ -12,11 +13,14 @@
 }
 
 
-header{
+.bg-image{
     height: 700px;
     background-size: 100% 100%;
     background-image: url("img/jumbo.png");
+    background-size: cover;
 }
+
+
 
 .container{
     width: 70%;
@@ -24,10 +28,7 @@ header{
 }
 
 ul li{
-   list-style: none;
-   display: inline;
-   padding: 20px;
-   
+    list-style: none;
 }
 
 ul{
@@ -39,11 +40,18 @@ a{
     text-decoration: none;
 }
 
+
+
 .float-left{
     float: left;
 }
+.float-right{
+    float: right;
+}
 
-
+.txt-center{
+    text-align: center;
+}
 
 .clearfix::after{
     content: "";
@@ -51,9 +59,6 @@ a{
     clear: both;
 }
 
-#navigat{
-    line-height: 80px;
-}
 
 .vert-align{
     vertical-align: middle;
@@ -75,13 +80,47 @@ a{
 .w20{
     width: 20%;
 }
+.w30{
+    width: 30%;
+}
+
+.w40{
+    width: 40%;
+}
+.w50{
+    width: 50%;
+}
 
 .w70{
     width: 70%;
 }
 
+.w80{
+    width: 80%;
+}
+
 .w100{
     width: 100%;
+}
+
+.h100{
+    height: 100%;
+}
+
+.h50{
+    height: 50%;
+}
+
+.h70{
+    height: 70%;
+}
+
+.h30{
+    height: 30%;
+}
+
+.h10{
+    height: 10%;
 }
 
 .h620{
@@ -95,9 +134,11 @@ a{
     background-color: rgb(29, 28, 28);
 }
 
+.bgc-violet{
+    background-color: rgb(110, 43, 235);
+}
 .temp-btn{
     border-radius: 50px;
-    margin: 20px 0px;
     text-align: center;
 }
 
@@ -106,7 +147,6 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .pos-rel{
@@ -124,3 +164,65 @@ a{
 #h-par{
     margin: 30px 0 15px;
 }
+
+header ul li{
+    display: inline;
+    padding: 20px;
+ }
+
+header ul a:hover{
+    background-color: rgb(202, 193, 193);
+    border-radius: 50px;
+    padding: 10px;
+    color: rgb(39, 29, 29);
+    transition: 200ms;
+}
+
+#navigat{
+    line-height: 80px;
+}
+
+main h1{
+    font-size: 3em;
+    margin: 20px 100px;
+}
+main p{
+    font-size: large;
+    margin: 20px 100px;
+}
+
+
+main section p{
+    vertical-align: middle;
+    height: 100%;
+}
+
+footer{
+    height: 500px;
+    background-color: rgb(65, 65, 65);
+}
+
+main section{
+    margin: 200px 0;
+}
+
+main section img{
+    width: 300px;
+}
+
+footer div ul{
+    float: left;
+    margin: 20px 50px;
+    padding: 10px;
+    color: lightgreen;
+    font-size: large;
+}
+
+footer div{
+    text-align: center;
+}
+
+#s-footer{
+    padding-top: 20px;
+}
+

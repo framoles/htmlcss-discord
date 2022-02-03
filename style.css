@@ -123,6 +123,10 @@ a{
     height: 10%;
 }
 
+.h20{
+    height: 20%;
+}
+
 .h620{
     height: 620px;
 }
@@ -140,6 +144,11 @@ a{
 .temp-btn{
     border-radius: 50px;
     text-align: center;
+}
+
+.btn-large{
+    padding: 10px;
+    font-size: 25px;
 }
 
 .pos-center{
@@ -165,6 +174,10 @@ a{
     margin: 30px 0 15px;
 }
 
+#btn-accedi{
+    margin: 20px 0;
+}
+
 header ul li{
     display: inline;
     padding: 20px;
@@ -176,6 +189,10 @@ header ul a:hover{
     padding: 10px;
     color: rgb(39, 29, 29);
     transition: 200ms;
+}
+
+.h-btn{
+    margin-top: 20px;
 }
 
 #navigat{

@@ -2,55 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;  
 }
 
-.text-white{
-    color: white;
-}
-.text-black{
-    color: black;
-}
+/* height class */
 
-
-.bg-image{
-    height: 700px;
-    background-size: 100% 100%;
-    background-image: url("img/jumbo.png");
-    background-size: cover;
+.h100{
+    height: 100%;
 }
 
+.h80{
+    height: 80%;
+}
 
+.h20{
+    height: 20%;
+}
 
-.container{
+/* end height class */
+
+/* width class */
+
+.w100{
+    width: 100%;
+}
+
+.w80{
+    width: 80%;
+}
+
+.w70{
     width: 70%;
-    margin: auto;
 }
 
-ul li{
-    list-style: none;
+.w50{
+    width: 50%;
 }
 
-ul{
-    text-align: center;
-    
+.w15{
+    width: 15%;
 }
+
+/* end width class */
+
+/* general */
 
 a{
     text-decoration: none;
+    color: white;
+    font-weight:bold;    
 }
 
-
-
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
+a:hover{
+    text-decoration: underline;
 }
 
-.txt-center{
-    text-align: center;
+li{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    padding: 0 10%;
+}
+
+.bg-cont{
+    background-color: #e5e5e5;
+}
+
+.vertalign{
+    vertical-align: middle;
 }
 
 .clearfix::after{
@@ -59,187 +80,199 @@ a{
     clear: both;
 }
 
-
-.vert-align{
-    vertical-align: middle;
+.f-left{
+    float: left;
 }
 
-.lh40{
-    line-height: 40px;
+.f-right{
+    float: right;
 }
 
-.lh60{
-    line-height: 60px;
-}
-.w7{
-    width: 7%;
-}
-.w10{
-    width: 10%;
-}
-.w20{
-    width: 20%;
-}
-.w30{
-    width: 30%;
-}
 
-.w40{
-    width: 40%;
-}
-.w50{
-    width: 50%;
-}
-
-.w70{
-    width: 70%;
-}
-
-.w80{
-    width: 80%;
-}
-
-.w100{
-    width: 100%;
-}
-
-.h100{
-    height: 100%;
-}
-
-.h50{
-    height: 50%;
-}
-
-.h70{
-    height: 70%;
-}
-
-.h30{
-    height: 30%;
-}
-
-.h10{
-    height: 10%;
-}
-
-.h20{
-    height: 20%;
-}
-
-.h620{
-    height: 620px;
-}
-
-.bgc-white{
-    background-color: white;
-}
-.bgc-black{
-    background-color: rgb(29, 28, 28);
-}
-
-.bgc-violet{
-    background-color: rgb(110, 43, 235);
-}
-.temp-btn{
-    border-radius: 50px;
+.txt-center{
     text-align: center;
 }
 
-.btn-large{
-    padding: 10px;
-    font-size: 25px;
+.txt-white{
+    color: white;
 }
 
-.pos-center{
+.txt-black{
+    color: black;
+}
+
+.brand-btn{
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: black;
+}
+
+.prelative{
+    position: relative;
+}
+
+/* end general */
+
+/* for header */
+
+header{
+    height: 60vh;
+    background-image: url("img/jumbo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+header nav{
+    line-height: 80px;
+}
+
+header li{
+    padding: 0 2%;
+    display: inline;
+}
+
+.jumbo{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.pos-rel{
-    position: relative;
+.jumbo h1{
+    font-size: 3.5em;
 }
 
-.fnt70{
-    font-size: 70px;
+.jumbo p{
+    margin: 7% 0;
+    font-size: 1.2em;
+    line-height: 25px;
 }
 
-.fnt20{
-    font-size: 20px;
+.jumbo a{
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 0 2%;
 }
 
-#h-par{
-    margin: 30px 0 15px;
+.jumbo a:last-child{
+    background-color: rgb(34, 34, 34);
+    color: white;
 }
 
-#btn-accedi{
-    margin: 20px 0;
-}
+/* end for header */
 
-header ul li{
-    display: inline;
-    padding: 20px;
- }
-
-header ul a:hover{
-    background-color: rgb(202, 193, 193);
-    border-radius: 50px;
-    padding: 10px;
-    color: rgb(39, 29, 29);
-    transition: 200ms;
-}
-
-.h-btn{
-    margin-top: 20px;
-}
-
-#navigat{
-    line-height: 80px;
-}
-
-main h1{
-    font-size: 3em;
-    margin: 20px 100px;
-}
-main p{
-    font-size: large;
-    margin: 20px 100px;
-}
-
-
-main section p{
-    vertical-align: middle;
-    height: 100%;
-}
-
-footer{
-    height: 500px;
-    background-color: rgb(65, 65, 65);
-}
+/* for main */
 
 main section{
-    margin: 200px 0;
+    padding: 10% 0; 
 }
 
-main section img{
-    width: 300px;
+.wave{
+    display: grid;
+    filter: invert(0.9);
 }
 
-footer div ul{
-    float: left;
-    margin: 20px 50px;
-    padding: 10px;
-    color: lightgreen;
-    font-size: large;
+.waverot{
+    transform: rotate(180deg);
 }
 
-footer div{
+.sec-txt{
+    padding: 0 15% 0 10% ;
+}
+
+.sec-txt h1{
+    margin-top: 30px;
+    font-size: 3em;
+}
+
+.sec-txt p{
+    margin-top: 5%;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+
+.sec-four{
     text-align: center;
 }
 
-#s-footer{
-    padding-top: 20px;
+.sec-four h2{
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    background-image: url("img/stars.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 0;
 }
 
+.sec-four a{
+    background-color: rgba(94, 105, 160, 0.705);
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 0 2%;
+}
+/* end for main */
+
+/* for footer */
+
+footer{
+    background-color: rgb(46, 46, 46);
+}
+
+footer section:nth-child(1){
+    padding: 7% 0;
+}
+
+.foot-link {
+    float: left;
+    margin: 0px 5%;
+}
+
+.foot-link ul li:nth-child(1) {
+    color: rgba(94, 105, 160, 0.705);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.foot-link li{
+    line-height: 25px;
+}
+
+footer div.w30{
+    padding-right: 50px;
+}
+
+footer div.w30 h1{
+    color: rgba(94, 105, 160, 0.705);
+    font-size: 1.8em;
+}
+
+.lang{
+    width: 8%;
+}
+
+footer div.w30 select{
+    margin: 7% 0;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.foot-icon i{
+    color: white;
+    margin-right: 5%;
+}
+
+footer section:nth-child(2){
+    padding: 3% 0 7%;
+    border-top: 1px solid rgba(94, 105, 160, 0.705);
+}
+
+footer section:nth-child(2) a{
+    background-color: rgba(94, 105, 160, 0.705);
+    color: white;
+}
+
+/* end for footer */
